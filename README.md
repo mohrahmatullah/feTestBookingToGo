@@ -1,6 +1,6 @@
 # feTestBookingToGo
 
-Project ini adalah aplikasi booking sederhana yang dikembangkan menggunakan Laravel.
+Project ini adalah Frontend BookingToGo Test.
 
 ## Persyaratan Sistem
 
@@ -9,23 +9,17 @@ Project ini adalah aplikasi booking sederhana yang dikembangkan menggunakan Lara
 
 ## Langkah Instalasi
 
-1. **Clone repository**
-
-   ```bash
-   git clone https://github.com/mohrahmatullah/feTestBookingToGo
-   cd feTestBookingToGo
-    ```
-2. **Install dependency dengan Composer**
+1. **Install dependency dengan Composer**
 ```bash
    composer install
 ```
 
-3. **Salin file environment**
+2. **Salin file environment**
 ```
     cp .env.example .env
 ```
 
-4. **Generate application key**
+3. **Generate application key**
 ```
     php artisan key:generate
 ```
