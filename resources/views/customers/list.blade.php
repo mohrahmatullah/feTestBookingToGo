@@ -3,7 +3,7 @@
 @section('content')
 <main>
     <div class="container-fluid px-4">
-        <h1 class="mt-4">Customer</h1>
+        <h1 class="mt-4 mb-5">Customer</h1>
         @if(session('success'))
             <div class="alert alert-success">{{ session('success') }}</div>
         @elseif(session('error'))
@@ -12,7 +12,7 @@
 
         <div class="card mb-4">
             <div class="card-body">
-                <a type="button" href="{{ route('customers.create') }}" class="btn btn-primary mb-3">Tambah Customer</a>
+                <a type="button" href="{{ route('customers.create') }}" class="btn btn-dark btn-sm"><i class="fa fa-plus"></i> Tambah Customer</a>
             </div>
         </div>
         <div class="card mb-4">
@@ -41,11 +41,11 @@
                                 </ul>
                             </td>
                             <td>
-                                <a href="{{ route('customers.edit', $customer['CstID']) }}" class="btn btn-sm btn-warning">Edit</a>
+                                <a href="{{ route('customers.edit', $customer['CstID']) }}" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i></a>
                                 <form action="{{ route('customers.destroy', $customer['CstID']) }}" method="POST" style="display:inline-block" onsubmit="return confirm('Yakin ingin menghapus customer ini?')">
                                     @csrf
                                     @method('DELETE')
-                                    <button type="submit" class="btn btn-danger btn-sm">Hapus</button>
+                                    <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></button>
                                 </form>
                             </td>
 

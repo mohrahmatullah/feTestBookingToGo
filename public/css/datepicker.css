@@ -1,0 +1,64 @@
+.datepicker {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10000 !important;
+}
+
+/* Header (month/year) */
+.datepicker .datepicker-days .datepicker-switch,
+.datepicker .datepicker-months .datepicker-switch,
+.datepicker .datepicker-years .datepicker-switch {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Navigation arrows */
+.datepicker .prev,
+.datepicker .next {
+  color: #007bff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Days grid */
+.datepicker table tr td,
+.datepicker table tr th {
+  width: 2.5rem;
+  height: 2.5rem;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover & active state */
+.datepicker table tr td:hover {
+  background-color: #e9f5ff;
+}
+
+.datepicker table tr td.active,
+.datepicker table tr td.active:hover {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Today's date */
+.datepicker table tr td.today {
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  color: #856404;
+  font-weight: bold;
+}
+
+/* Disabled dates */
+.datepicker table tr td.disabled,
+.datepicker table tr td.disabled:hover {
+  color: #ccc;
+  background-color: transparent;
+  cursor: not-allowed;
+}
