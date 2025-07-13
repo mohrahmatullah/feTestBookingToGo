@@ -2,7 +2,7 @@
 
 Project ini adalah Frontend BookingToGo Test.
 
-## Persyaratan Sistem
+## Persyaratan
 
 - **PHP 8** atau lebih baru
 - **Composer** sudah terinstall
