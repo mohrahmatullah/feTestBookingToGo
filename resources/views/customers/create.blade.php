@@ -6,7 +6,7 @@
 @section('content')
 <main>
     <div class="container-fluid px-4">
-        <h1 class="mt-4">User</h1>
+        <h1 class="mt-4 mb-5">User</h1>
         <form method="POST" action="{{ url('/customers') }}" id="customerForm">
             @csrf
             <div class="mb-3">
